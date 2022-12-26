@@ -1,21 +1,25 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import Banner from './components/Banner';
+import Row from './components/Row';
+import requests from './functions/requests';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import About from './pages/About';
 
 class App extends React.PureComponent {
   render() {
     return (
-      <div>
+      <div className="App">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <Banner classes fetchUrl={requests.fetchNetflixOriginals} />
+        <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
+        <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+        <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
+        <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
+        <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
+        <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+        <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
+        <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
       </div>
     );
   }
 }
-
 export default App;
