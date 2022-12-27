@@ -1,14 +1,7 @@
-import axios from './axios';
-
-const fetchData = async (cls, url, callback) => {
-  const request = await axios.get(url);
-  const result = request.data.results;
-  callback(
-    cls
-      ? result[Math.floor(Math.random() * result.length - 1)]
-      : result,
-  );
-  return request;
+const searchList = async (searchText) => {
+  const res = await fetch("../data/search.json");
+  const search = await res.json();
+  return search;
 };
 
-export default fetchData;
+export default searchList;
