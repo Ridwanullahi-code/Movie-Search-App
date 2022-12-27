@@ -121,9 +121,7 @@
   .poster img{
     max-height: 250px;
   }
-   .modal_popup {
-     width: 50vw;
-   }
+   
 }
 @media screen and (min-width: 768px) and (max-width:1023px) {
    .poster {
@@ -137,6 +135,9 @@
   }
   .poster {
     width: calc((var(--width) / 3) - 7px);
+  }
+  .modal_popup {
+    width: 50%;
   }
 }
 

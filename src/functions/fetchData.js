@@ -1,7 +1,7 @@
-const searchList = async (searchText) => {
-  const res = await fetch("../data/search.json");
+const searchList = async () => {
+  const res = await fetch('../data/search.json');
   const search = await res.json();
-  return search;
+  console.log(search);
 };
 
 export default searchList;

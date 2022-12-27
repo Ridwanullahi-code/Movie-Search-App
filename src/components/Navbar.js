@@ -29,6 +29,14 @@ function Navbar() {
     setChange(e.target.value);
   };
 
+  const handleClear = () => {
+    const search = document.querySelector(".search_bar");
+    if (search) {
+      search.value = '';
+    }
+    setChange(!change);
+  }
+  
   const list = storage.getItems();
   const result = change && data.length > 0 ? Filter(list, change) : data;
 
@@ -102,6 +110,10 @@ function Navbar() {
               placeholder="Search"
               onChange={handleChange}
             />
+            {change && <button type='button' className='clear_btn cr' onClick={handleClear}>
+              <i className="fa-solid fa-xmark" />
+            </button>
+            }
             <button type="button" className="search_btn cr" onClick={handlePress}>
               <i className="fa-solid fa-magnifying-glass" />
             </button>
@@ -113,7 +125,8 @@ function Navbar() {
         {change && <TodoList data={result} />}
       </div>
 
-      <button type="button" className={`glass_lens cr ${hide && 'hide'}`} onClick={hideHandler}>
+      <button type="button" className={`glass_lens cr ${hide && 'hide'}`}
+        onClick={hideHandler}>
         <i className="fa-solid fa-magnifying-glass" />
       </button>
       <div className={`user v-flex ${!arrow && 'show_hide'}`}>

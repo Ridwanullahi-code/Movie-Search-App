@@ -124,8 +124,17 @@ header .nav_items .nav_item .nav_link:hover {
 }
 
 .search .search_bar {
-  width: 40vw;
+  width: 38vw;
   font-size: 18px;
+  position: absolute;
+  left: 10px;
+}
+
+.search_option .search .clear_btn{
+  position: absolute;
+  right: 70px;
+  font-size: 20px;
+  color:rgba(17, 17, 17, 0.774);
 }
 
 .search_option .search .search_btn {
@@ -174,15 +183,20 @@ header .nav_items .nav_item .nav_link:hover {
 
 @media screen and (max-width: 520px) {
   header {
-    padding: 0 8px;
+    padding: 0 18px;
   }
 
   .search {
-    width: 70vw;
+    width: 60vw;
   }
+  
   .width {
-    width: 40vw;
+    width: 45vw;
   }
+  .search .search_bar{
+    width:40vw;
+  }
+  
   .search_option,
   .user {
     display: none;
