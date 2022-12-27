@@ -67,6 +67,53 @@
   margin: 80px 0;
   text-align: center;
 }
+
+.modal_popup {
+  width: 42%;
+  padding: 10px 7px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: black;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.modal_popup .result_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 6px;
+}
+
+.modal_popup .result_box:hover {
+  background-color: rgb(238, 238, 238);
+  transition: 0.1s ease-in-out;
+
+}
+
+.modal_popup .results {
+  font-weight: 540;
+  font-size: 15px;
+}
+
+.modal_popup .remove_btn {
+  color: blue;
+  font-size: 11px;
+}
+
+.modal_popup .remove_btn:hover {
+  text-decoration: underline;
+}
+
 @media screen  and (max-width: 768px) {
   .poster {
     width: calc((var(--width) / 3) - 8px);
@@ -74,6 +121,9 @@
   .poster img{
     max-height: 250px;
   }
+   .modal_popup {
+     width: 50vw;
+   }
 }
 @media screen and (min-width: 768px) and (max-width:1023px) {
    .poster {
@@ -89,6 +139,8 @@
     width: calc((var(--width) / 3) - 7px);
   }
 }
+
+/* Modal popup */
 
 /* <=============== navbar styling  =====================> */
 

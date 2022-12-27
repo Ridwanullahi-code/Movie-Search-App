@@ -10,6 +10,7 @@ input {
 button {
   background-color: transparent;
   border: none;
+  position: relative;
 }
 
 .cr {
@@ -112,7 +113,7 @@ header .nav_items .nav_item .nav_link:hover {
 }
 
 .search {
-  width: 40vw;
+  width: 47vw;
   align-items: center;
   padding-left: 10px;
   border: 1px solid rgb(211, 211, 211);
@@ -123,7 +124,7 @@ header .nav_items .nav_item .nav_link:hover {
 }
 
 .search .search_bar {
-  width: 33vw;
+  width: 40vw;
   font-size: 18px;
 }
 
@@ -179,11 +180,9 @@ header .nav_items .nav_item .nav_link:hover {
   .search {
     width: 70vw;
   }
-
   .width {
     width: 40vw;
   }
-
   .search_option,
   .user {
     display: none;
