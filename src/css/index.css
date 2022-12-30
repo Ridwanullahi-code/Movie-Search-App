@@ -31,13 +31,13 @@
 }
 
 .poster {
-  width: calc((var(--width) / 4) - 60px);
+  width: calc((var(--width) / 4) - 74px);
   position: relative;
 }
 
 .poster img {
   width: 100%;
-  max-height: 230px;
+  max-height: 340px;
 }
 
 .title {
@@ -64,7 +64,7 @@
 }
 
 .title .movie_title {
-  margin: 80px 0;
+  margin: 140px 0;
   text-align: center;
 }
 

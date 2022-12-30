@@ -1,0 +1,130 @@
+
+.Login {
+    margin:auto;
+    width: 100%;
+    height: 100vh;
+    background: url("../net_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gap{
+    display: flex;
+    color: rgba(255, 255, 255, 0.802);
+    gap:7px;
+}
+.form_container {
+    background-color: rgba(24, 19, 13, 0.839);
+    border: 1px solid rgba(17, 17, 17, 0.672);
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 420px;
+    padding: 30px;
+}
+
+.form_inputs {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    gap:20px;
+}
+
+.form_inputs input{
+    padding: 10px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-size: 17px;
+}
+
+.form_inputs
+ input::placeholder{
+    color:white;
+    font-size: 13px;
+}
+
+.sign_btn{
+    background-color: rgb(229, 9, 19) !important;
+    border: 1px solid rgb(229, 9, 19);
+    color: rgba(255, 255, 255, 0.574) !important;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.sign_btn:hover{
+    opacity: 0.8;
+}
+.signup_btn{
+    background-color: rgba(17, 17, 17, 0.879);
+    border:1px solid rgb(229, 9, 19);
+    color: rgba(255, 255, 255, 0.72) !important;
+    font-size: 15px;
+}
+input[type="checkbox"]{
+    width:18px;
+    height: 18px;
+}
+input[type="checkbox"]:checked{
+    accent-color: rgba(240, 248, 255, 0.718);
+}
+
+.signup_btn:hover{
+    background-color:rgb(229, 9, 19);
+    transition: 0.3s ease-in-out;
+}
+
+.other_field{
+    display: flex;
+    justify-content: space-between;
+}
+
+.color{
+    color: rgba(255, 255, 255, 0.72);
+}
+.login_with_google{
+    background-color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding:6px;
+    font-weight: bold;
+}
+.login_with_google:hover{
+    opacity: 0.7;
+}
+.alternative{
+    display: flex;
+    align-items: center;
+    gap:9px;
+}
+hr{
+    width: 370px;
+    height: 1px;
+}
+.google_logo{
+    width:30px;
+    height:30px;
+}
+
+.other_navbar {
+    background-color: #111;
+    padding:20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.web_logo{
+    width: 130px;
+    max-height: fit-content;
+}
+.user_btn{
+    background-color: rgb(229, 9, 19);
+    border: 1px solid rgb(229, 9, 19);
+    border-radius: 4px;
+    padding:8px;
+    width: 100px;
+    color: white;
+}

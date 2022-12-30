@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import TodoList from './TodoList';
-import LocalStorage from '../functions/localstorage';
+import getData from '../functions/fetchData';
 import Filter from '../functions/filter';
 
 import '../css/navbar.css';
@@ -13,7 +13,11 @@ function Navbar() {
   const [change, setChange] = useState('');
   const [data, setData] = useState([]);
 
-  const storage = new LocalStorage();
+  useEffect(() => {
+    getData('data.json', setData);
+  }, []);
+
+  const result = change && data.length > 0 ? Filter(data, change) : data;
 
   const arrowHandler = () => {
     handleArrow(!arrow);
@@ -30,19 +34,11 @@ function Navbar() {
   };
 
   const handleClear = () => {
-    const search = document.querySelector(".search_bar");
+    const search = document.querySelector('.search_bar');
     if (search) {
       search.value = '';
     }
     setChange(!change);
-  }
-  
-  const list = storage.getItems();
-  const result = change && data.length > 0 ? Filter(list, change) : data;
-
-  const handlePress = () => {
-    setData([...data, { id: Date.now(), search: change }]);
-    storage.setItems([...data, { id: Date.now(), search: change }]);
   };
 
   const message = document.querySelector('.modal_popup');
@@ -51,7 +47,7 @@ function Navbar() {
       message.style.display = 'none';
     }
   }
-  
+
   return (
     <header>
       <button
@@ -110,11 +106,12 @@ function Navbar() {
               placeholder="Search"
               onChange={handleChange}
             />
-            {change && <button type='button' className='clear_btn cr' onClick={handleClear}>
+            {change && (
+            <button type="button" className="clear_btn cr" onClick={handleClear}>
               <i className="fa-solid fa-xmark" />
             </button>
-            }
-            <button type="button" className="search_btn cr" onClick={handlePress}>
+            )}
+            <button type="button" className="search_btn cr">
               <i className="fa-solid fa-magnifying-glass" />
             </button>
           </div>
@@ -125,13 +122,16 @@ function Navbar() {
         {change && <TodoList data={result} />}
       </div>
 
-      <button type="button" className={`glass_lens cr ${hide && 'hide'}`}
-        onClick={hideHandler}>
+      <button
+        type="button"
+        className={`glass_lens cr ${hide && 'hide'}`}
+        onClick={hideHandler}
+      >
         <i className="fa-solid fa-magnifying-glass" />
       </button>
       <div className={`user v-flex ${!arrow && 'show_hide'}`}>
-        <NavLink className="nav_link">Sign</NavLink>
-        <NavLink className="nav_link">Login</NavLink>
+        <NavLink to="/sign_up" className="nav_link">Sign</NavLink>
+        <NavLink to="/login_in" className="nav_link">Login</NavLink>
       </div>
     </header>
   );

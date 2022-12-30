@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import fetchData from '../functions/fetchData';
 import truncate from '../functions/truncate';
 
-function Banner({ classes, fetchUrl }) {
+function Banner() {
   const [movie, setMovie] = useState([]);
+  const fetchUrl = 'https://api.themoviedb.org/3/movie/12/videos?api_key=045e95a667b998ace311facd0a3c02cb&language=en-US';
 
   useEffect(() => {
     // if [], run once when the row loads and don't run again
-    fetchData(classes, fetchUrl, setMovie);
+    setMovie(...movie, fetchData(fetchUrl));
   }, []);
 
   const style = {
