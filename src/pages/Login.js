@@ -12,8 +12,8 @@ function Login() {
             Sign In
           </h1>
           <fieldset className="form_inputs">
-            <input type="email" placeholder="Email or phone number" />
-            <input type="password" placeholder="Password" />
+            <input type="email" placeholder="Email or phone number" required />
+            <input type="password" placeholder="Password" required />
             <input className="sign_btn cr" type="submit" value="Sign In" />
             <input className="signup_btn cr" type="button" value="Sign Up" />
           </fieldset>

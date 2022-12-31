@@ -14,15 +14,15 @@ function Register() {
     <section className="user_container">
       <Header value="Sign In" />
       <div className="Login v-flex">
-        <form className="form_container">
+        <form className="form_container" method="POST">
           <h1>Sign Up</h1>
           <fieldset className="form_inputs">
-            {page === 0 && <input className="input" type="text" placeholder="First Name" />}
-            {page === 0 && <input className="input" type="text" placeholder="Last Name" />}
-            {page === 1 && <input className="input" type="email" placeholder="Email" />}
-            {page === 1 && <input className="input" type="text" placeholder="Username" />}
-            {page === 2 && <input className="input" type="password" placeholder="Create password" />}
-            {page === 2 && <input className="input" type="password" placeholder="Confirm password" />}
+            {page === 0 && <input className="input" type="text" placeholder="First Name" required />}
+            {page === 0 && <input className="input" type="text" placeholder="Last Name" required />}
+            {page === 1 && <input className="input" type="email" placeholder="Email" required />}
+            {page === 1 && <input className="input" type="text" placeholder="Username" required />}
+            {page === 2 && <input className="input" type="password" placeholder="Create password" required />}
+            {page === 2 && <input className="input" type="password" placeholder="Confirm password" required />}
           </fieldset>
           {page === 2 && (
           <div className="checkbox gap">
