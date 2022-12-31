@@ -21,7 +21,7 @@ function TodoList({ data }) {
 
 // props validation should be proTypes
 TodoList.propTypes = {
-  data: PropTypes.array.isRequired,
+  data: PropTypes.arrayOf.isRequired,
 };
 
 export default TodoList;

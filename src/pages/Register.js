@@ -1,15 +1,13 @@
-/* eslint-disable */
-
 import React, { useState } from 'react';
 import google from '../google.png';
 import Header from '../components/Header';
 
 function Register() {
-  let [page, nextPage] = useState(0);
+  const [page, nextPage] = useState(0);
 
   const handleNext = (e) => {
     e.preventDefault();
-    nextPage(++page);
+    nextPage(page + 1);
   };
 
   return (

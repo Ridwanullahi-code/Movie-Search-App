@@ -13,7 +13,7 @@ function Home() {
 
   useEffect(() => {
     dispatch(fetchMovies());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
