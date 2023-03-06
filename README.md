@@ -2,13 +2,35 @@
 [Live Demo](https://movieweb-app.netlify.app/)
 
 ## **Description**
-**Movie Web** Is a Single Page App (SPA) that fetch data from API using Redux, dispatch data and display it on UI. Built with React, Redux, CSS
+**A Movie Search App** that allows users to search for movies by title or genre, and displays detailed information about each movie.
+The application is designed to provide users with a user-friendly interface that displays relevant movie information and allows users to save their favorite movies.
+Use React for the front end and Redux for state management, JavaScript for creating interactive websites, and CSS for styling. Deploy the app on Render. Follow software development best practices like code reviews, automated testing, and continuous integration.
 
-- Understand the using of [HTML & CSS best practices](https://github.com/microverseinc/curriculum-html-css/blob/main/articles/html_css_best_practices.md)
+
+## **Features:**
+
+- Home page: A landing page that displays popular movies and provides a search bar to search for movies.
+- Search: A search bar that allows users to search for movies by title, genre, or actor.
+- Movie Details: A page that displays detailed information about a movie, including the title, genre, director, actors, synopsis, and ratings.
+- Favorite Movies: A page that displays a list of the user's favorite movies and allows them to add or remove movies.
+- Login/Sign Up: A page that allows users to create an account or log in to an existing account to save their favorite movies.
+
+## **Frontend Technology Stack:**
+
+- HTML, CSS, and JavaScript: To build the user interface and create a responsive design.
+- Use [HTML Semantic and CSS best practice](https://github.com/microverseinc/curriculum-html-css/blob/main/articles/html_css_best_practices.md) to improve web accessibility and user experience 
+- [React.js](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/lessons/what_is_react.md): To create a dynamic and interactive user interface.
+- [Tailwind CSS](https://tailwindcss.com/docs/installation): To style the application and create a modern and professional look.
+- Use TMDB API : To fetch movie data and display it on the application.
+- Use Redux: To store user's favorite movies and retrieve them when the user logs in.
 - Use GitHub flow
 - Use [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/gitflow.md).
-- Setup project with [React](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/lessons/what_is_react.md)
-- Setup With [Tailwind CSS](https://tailwindcss.com/docs/installation)
+
+ ## **Project Deliverables:**
+
+- A functional and responsive application that meets the requirements specified in the project description.
+- Source code with proper documentation.
+- User manual and installation instructions.
 
 ## **Prerequisites:**
 - Basic Knowledge of HTML & CSS
@@ -16,13 +38,6 @@
 - Basic Knowledge of [React Setup](https://reactjs.org/docs/getting-started.html) setup
 - [Tailwind CSS](https://tailwindcss.com/docs/installation)
 
-## **Build With:**
-
-- HTML
-- CSS
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [React]((https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/lessons/webpack_v1_1.md))
-- [Tailwind CSS](https://tailwindcss.com/docs/installation)
 
 ## **SETUP**
 
