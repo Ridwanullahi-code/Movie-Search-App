@@ -44,13 +44,13 @@ Use React for the front end and Redux for state management, JavaScript for creat
 To make use of this project, kindly run any of the following commands.
 
 ```
-git clone https://github.com/Ridwanullahi-code/movieweb.git
+git clone https://github.com/Ridwanullahi-code/Movie-Search-App.git
 ```
 
 or
 
 ```
-git clone git@github.com:Ridwanullahi-code/movieweb.git
+git clone git@github.com:Ridwanullahi-code/Movie-Search-App.git
 ```
 ## **INSTALL**
 ```
@@ -83,7 +83,7 @@ I'm full stack software developer, Computer science, and Microverse student.
 ## 🤝 **Contributing**
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Ridwanullahi-code/movieweb/issues/)
+Feel free to check the [issues page](https://github.com/Ridwanullahi-code/Movie-Search-App/issues/)
 ## **Acknowledgements**
 
 - [Microverse](https://www.microverse.org/)
